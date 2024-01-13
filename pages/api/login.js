@@ -1,4 +1,3 @@
-import connectDb from "@/_db"
 const secret = process.env.SECRET;
 
 const handler = (req, res)=>{

@@ -3,7 +3,7 @@ import { prisma } from "../libs/prismaclient";
 const handler = async (req, res) => {
   try {
     if (req.method === "POST" && process.env.SECRET === req.body.secret) {
-    const reserv = await prisma.reservations.delete({where:{id:req.body.reservid}})
+    const reserv = await prisma.reservation.delete({where:{id:req.body.reservid}})
       res.status(200).json({
         success: true,
         message: "Reservation canceled!",

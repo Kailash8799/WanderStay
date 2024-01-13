@@ -3,7 +3,7 @@ import { prisma } from "../libs/prismaclient";
 const handler = async (req, res) => {
   try {
     if (req.method === "POST" && process.env.SECRET === req.body.secret) {
-      const listings = await prisma.reservations.findMany({where:{listingId:req.body.id}})
+      const listings = await prisma.reservation.findMany({where:{listingId:req.body.id}})
       res.status(200).json({
         success: true,
         data:listings

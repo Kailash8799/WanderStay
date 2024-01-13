@@ -5,7 +5,7 @@ const handler = async(req, res)=>{
         const {email} = req.body;
         const user = await prisma.user.findUnique({where:{email:email}})
         if(user){
-            const reservation = await prisma.reservations.findMany({where:{userId:user?.id}})
+            const reservation = await prisma.reservation.findMany({where:{userId:user?.id}})
             res.status(200).json({success:true,message:"Wishlist items",reservation})
             return;
         }
