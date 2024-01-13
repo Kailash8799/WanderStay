@@ -4,7 +4,7 @@ import FavListing from "./compotents/AllListing/FavListing";
 import { getSession} from "next-auth/react";
 import HomeFooter from "./compotents/Footer/HomeFooter";
 
-const wishlists = ({ setshowrentModal, favListings,setshowsignupModal,setshowloginModal }) => {
+const Wishlists = ({ setshowrentModal, favListings,setshowsignupModal,setshowloginModal }) => {
   return (
     <div>
       <Navbar setshowrentModal={setshowrentModal} setshowsignupModal={setshowsignupModal} setshowloginModal={setshowloginModal}/>
@@ -68,4 +68,4 @@ export const getServerSideProps = async (context) => {
   return { props: { favListings } };
 };
 
-export default wishlists;
+export default Wishlists;

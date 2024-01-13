@@ -23,7 +23,7 @@ const Trips = ({
         <div className="mt-5 mb-3">
           <h1 className="text-lg font-bold text-bl dark:text-white">Trips</h1>
           <h1 className="text-sm font-light text-bl dark:text-white">
-            Where you've been and where you've going!
+            Where you&apos;ve been and where you&apos;ve going!
           </h1>
         </div>
         {reservationAll?.length !== 0 ? (
