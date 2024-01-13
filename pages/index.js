@@ -144,6 +144,7 @@ export const getServerSideProps = async (context) => {
       }
     );
     let favListings = []
+    console.log(session)
     if (session && session?.user?.email) {
       const userFavIds = await fetch(
         `${process.env.NEXT_PUBLIC_HOST}/api/favourites`,

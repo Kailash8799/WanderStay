@@ -38,13 +38,13 @@ const Navbar = ({setshowrentModal,setshowsignupModal,setshowloginModal}) => {
       localStorage.setItem("thememode","light")
       setThemes("light");
     }
-  }, []);
+  }, [systemTheme]);
 
   useEffect(() => {
     if (session != undefined && status == "authenticated") {
       setislogin(true);
     }
-  }, [session]);
+  }, [session, status]);
   const toggleOpen = () => {
     setisopen(!isopen);
   };
