@@ -25,6 +25,7 @@
     "bcrypt": "^5.1.1",
     "date-fns": "^3.2.0",
     "framer-motion": "^10.18.0",
+    "fs": "^0.0.1-security",
     "leaflet": "^1.9.4",
     "next": "^14.0.4",
     "next-auth": "^4.24.5",
