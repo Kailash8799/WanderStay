@@ -1,4 +1,4 @@
-import { prisma } from "../libs/prismaclient";
+import { prisma } from "../../libs/prismaclient";
 
 const handler = async (req, res) => {
   try {
@@ -12,7 +12,7 @@ const handler = async (req, res) => {
         const reservandupdate = await prisma.listing.update({
           where: { id: id },
           data: {
-            reservations: {
+            reservation: {
               create: {
                 userId: user?.id,
                 startDate: startDate,

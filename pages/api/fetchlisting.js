@@ -1,4 +1,4 @@
-import { prisma } from "../libs/prismaclient";
+import { prisma } from "../../libs/prismaclient";
 
 const handler = async (req, res) => {
   try {
@@ -42,7 +42,7 @@ const handler = async (req, res) => {
       }
       if(startdate && enddate){
         query.NOT = {
-          reservations:{
+          reservation:{
             some:{
               OR:[
                 {

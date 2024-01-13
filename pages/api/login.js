@@ -1,3 +1,4 @@
+// import connectDb from "@/_db"
 const secret = process.env.SECRET;
 
 const handler = (req, res)=>{
@@ -8,4 +9,5 @@ const handler = (req, res)=>{
     }
 }
 
-export default connectDb(handler);
+export default handler;
+// export default connectDb(handler);

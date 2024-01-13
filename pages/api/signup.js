@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import { prisma } from '../libs/prismaclient';
+import { prisma } from '../../libs/prismaclient';
 
 const handler = async(req, res)=>{
     if(req.method === "POST" && process.env.SECRET === req.body.secret){
