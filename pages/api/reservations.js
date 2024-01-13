@@ -12,7 +12,7 @@ const handler = async (req, res) => {
         const reservandupdate = await prisma.listing.update({
           where: { id: id },
           data: {
-            reservation: {
+            reservations: {
               create: {
                 userId: user?.id,
                 startDate: startDate,

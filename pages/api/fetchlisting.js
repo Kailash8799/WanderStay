@@ -42,7 +42,7 @@ const handler = async (req, res) => {
       }
       if(startdate && enddate){
         query.NOT = {
-          reservation:{
+          reservations:{
             some:{
               OR:[
                 {
