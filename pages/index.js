@@ -1,7 +1,7 @@
 import Head from "next/head";
 import HomeHeader from "@/compotents/Navbar/HomeHeader";
 import HomeFooter from "@/compotents/Footer/HomeFooter";
-// import GetListing from "./compotents/AllListing/GetListing";
+import GetListing from "@/compotents/AllListing/GetListing";
 import { getSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import qs from 'query-string'
@@ -85,7 +85,7 @@ export default function Home({
         <div className="mx-4 mb-10 lg:mx-16 md:mx-10">
           {allListings?.length !== 0 ? (
             <div className="min-h-[60vh] pt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8">
-              {/* {allListings?.map((item) => {
+              {allListings?.map((item) => {
                 return (
                   <GetListing
                     setshowloginModal={setshowloginModal}
@@ -94,7 +94,7 @@ export default function Home({
                     wishlisted={favListings.includes(item.id)}
                   />
                 );
-              })} */}
+              })}
             </div>
           ) : (
             <div className="items-center justify-center h-[60vh] text-center">
