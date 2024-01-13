@@ -143,7 +143,6 @@ export const getServerSideProps = async (context) => {
         },
       }
     );
-    console.log(responce);
     let favListings = []
     if (session && session?.user?.email) {
       const userFavIds = await fetch(

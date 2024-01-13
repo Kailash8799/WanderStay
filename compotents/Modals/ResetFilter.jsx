@@ -18,7 +18,6 @@ const ResetFilter = ({ showresetfilterModal, setshowresetfilterModal }) => {
   const [price, setprice] = useState(false);
 
   const resetFilters = async () => {
-    console.log(country,date,guest,room,bathroom,price);
     let currentQuery = {};
     if (params) {
       currentQuery = qs.parse(params.toString());

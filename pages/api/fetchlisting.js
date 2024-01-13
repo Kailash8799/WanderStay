@@ -63,7 +63,6 @@ const handler = async (req, res) => {
         where: query,
         orderBy: { createdAt: "desc" },
       });
-      console.log(listings)
       res.status(200).json({
         success: true,
         data: listings,

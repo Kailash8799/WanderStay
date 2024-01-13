@@ -17,7 +17,6 @@ const handler = async(req, res)=>{
                     password:hashPassword
                 }
             })
-            console.log(u);
             res.status(200).json({success:true,message:"Your account has been created successfully"})
             return;
         }

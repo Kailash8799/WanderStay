@@ -49,7 +49,6 @@ const SignUpModal = ({
         }
       );
       const data = await responce.json();
-      console.log(data);
       if (data.success) {
         setemail('')
         setpassword('')

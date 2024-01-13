@@ -35,7 +35,6 @@ const handler = async (req, res) => {
         const listing = await prisma.listing.create({
           data: data
         });
-        console.log(listing);
         res.status(200).json({
           success: true,
           message: "Listing Created!",
