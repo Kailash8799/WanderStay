@@ -435,7 +435,6 @@ export const getServerSideProps = async (context) => {
       const uu = await userDetails.json();
       user = uu.data;
     }
-
     if (session && session?.user?.email) {
       const userFavIds = await fetch(
         `${process.env.NEXT_PUBLIC_HOST}/api/favourites`,

@@ -6,10 +6,10 @@ const handler = async (req, res) => {
     const user = await prisma.user.findUnique({where:{id}})
     if (user) {
       let data = {id:user?.id,image:user?.image,name:user?.name,date:user?.createdAt.toISOString()}
-      res.status(401).json({ success: true, message: "Success",data});
+      res.status(200).json({ success: true, message: "Success",data});
       return;
     } else {
-      res.status(200).json({ success: false, message: "Some error accured" });
+      res.status(401).json({ success: false, message: "Some error accured" });
       return;
     }
   } else {

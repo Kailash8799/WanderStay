@@ -10,6 +10,7 @@ import RentModal from "@/compotents/Modals/RentModal";
 import FiltersModal from "@/compotents/Modals/FiltersModal";
 import ResetFilter from "@/compotents/Modals/ResetFilter";
 import { AnimatePresence } from "framer-motion";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   const [showloginModal, setshowloginModal] = useState(false);
@@ -20,53 +21,59 @@ export default function App({ Component, pageProps }) {
   const [showresetfilterModal, setshowresetfilterModal] = useState(false);
   return (
     <AnimatePresence>
-    <ThemeProvider enableSystem={true} attribute="class">
-      <SessionProvider session={pageProps.session}>
-        <FiltersModal
-          showfilterModal={showfilterModal}
-          setshowfilterModal={setshowfilterModal}
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="d3DAPwzCL8qN80KsCOQUzCyjL0Jxsk4tBj0hHbWcyGY"
         />
-        <ResetFilter
-          showresetfilterModal={showresetfilterModal}
-          setshowresetfilterModal={setshowresetfilterModal}
-        />
-        <RentModal
-          showrentModal={showrentModal}
-          setshowrentModal={setshowrentModal}
-        />
-        <LoginModel
-          showloginModal={showloginModal}
-          setshowloginModal={setshowloginModal}
-          showsignupModal={showsignupModal}
-          setshowsignupModal={setshowsignupModal}
-          setshowforgotModal={setshowforgotModal}
-        />
-        <SignUpModal
-          showloginModal={showloginModal}
-          setshowloginModal={setshowloginModal}
-          showsignupModal={showsignupModal}
-          setshowsignupModal={setshowsignupModal}
-        />
-        <ForgotModal
-          showloginModal={showloginModal}
-          setshowloginModal={setshowloginModal}
-          showforgotModal={showforgotModal}
-          setshowforgotModal={setshowforgotModal}
-        />
-        <Component
-          {...pageProps}
-          showloginModal={showloginModal}
-          setshowloginModal={setshowloginModal}
-          showsignupModal={showsignupModal}
-          setshowsignupModal={setshowsignupModal}
-          setshowrentModal={setshowrentModal}
-          setshowfilterModal={setshowfilterModal}
-          setshowresetfilterModal={setshowresetfilterModal}
-          showresetfilterModal={showresetfilterModal}
-        />
-        <Gfooter />
-      </SessionProvider>
-    </ThemeProvider>
+      </Head>
+      <ThemeProvider enableSystem={true} attribute="class">
+        <SessionProvider session={pageProps.session}>
+          <FiltersModal
+            showfilterModal={showfilterModal}
+            setshowfilterModal={setshowfilterModal}
+          />
+          <ResetFilter
+            showresetfilterModal={showresetfilterModal}
+            setshowresetfilterModal={setshowresetfilterModal}
+          />
+          <RentModal
+            showrentModal={showrentModal}
+            setshowrentModal={setshowrentModal}
+          />
+          <LoginModel
+            showloginModal={showloginModal}
+            setshowloginModal={setshowloginModal}
+            showsignupModal={showsignupModal}
+            setshowsignupModal={setshowsignupModal}
+            setshowforgotModal={setshowforgotModal}
+          />
+          <SignUpModal
+            showloginModal={showloginModal}
+            setshowloginModal={setshowloginModal}
+            showsignupModal={showsignupModal}
+            setshowsignupModal={setshowsignupModal}
+          />
+          <ForgotModal
+            showloginModal={showloginModal}
+            setshowloginModal={setshowloginModal}
+            showforgotModal={showforgotModal}
+            setshowforgotModal={setshowforgotModal}
+          />
+          <Component
+            {...pageProps}
+            showloginModal={showloginModal}
+            setshowloginModal={setshowloginModal}
+            showsignupModal={showsignupModal}
+            setshowsignupModal={setshowsignupModal}
+            setshowrentModal={setshowrentModal}
+            setshowfilterModal={setshowfilterModal}
+            setshowresetfilterModal={setshowresetfilterModal}
+            showresetfilterModal={showresetfilterModal}
+          />
+          <Gfooter />
+        </SessionProvider>
+      </ThemeProvider>
     </AnimatePresence>
   );
 }

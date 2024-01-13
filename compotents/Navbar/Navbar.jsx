@@ -12,7 +12,7 @@ import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 
 const Navbar = ({setshowrentModal,setshowsignupModal,setshowloginModal}) => {
-    const { data: session, status } = useSession();
+  const { data: session, status } = useSession();
   const { systemTheme, theme, setTheme } = useTheme();
   const [themes, setThemes] = useState("dark");
   const [isopen, setisopen] = useState(false);
