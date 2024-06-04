@@ -42,7 +42,7 @@ git clone https://github.com/Kailash8799/WanderStay.git
 cd WanderStay
 ```
 
-3. Create a `.env.local` file in the root directory of client and add the environment variables as mentioned in the `vite-env.d.ts` file in `src` directory.
+3. Create a `.env.local` file in the root directory of client and add the environment variables as mentioned in the `.env.example` file in the root directory.
 4. Start the development server:
 
 ```sh
