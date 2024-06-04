@@ -64,10 +64,10 @@ const Navbar = ({setshowrentModal,setshowsignupModal,setshowloginModal}) => {
   const LogoutFunction = () => {
     signOut();
   };
-  const openAirbnbHome = ()=>{
-    setisopen(false)
-    setshowrentModal(true)
-  }
+  const openWanderStayHome = () => {
+    setisopen(false);
+    setshowrentModal(true);
+  };
   return (
     <>
       <div className="sticky top-0 z-40 flex items-center justify-between px-5 py-2 bg-white border-b border-gray-300 dark:bg-black lg:px-16 dark:border-gray-700">
@@ -144,10 +144,10 @@ const Navbar = ({setshowrentModal,setshowsignupModal,setshowloginModal}) => {
               </div>
               <div className="mx-4 cursor-pointer">
                 <h1
-                  onClick={openAirbnbHome}
+                  onClick={openWanderStayHome}
                   className="items-center text-base font-medium text-black dark:text-white"
                 >
-                  Airbnb is your home
+                  WanderStay is your home
                 </h1>
               </div>
             </div>
@@ -209,7 +209,7 @@ const Navbar = ({setshowrentModal,setshowsignupModal,setshowloginModal}) => {
               <div className="mx-4 cursor-pointer">
                 <Link href={"/host/homes"}>
                   <h1 className="items-center text-base font-medium text-black dark:text-white">
-                    Airbnb your home
+                    WanderStay your home
                   </h1>
                 </Link>
               </div>

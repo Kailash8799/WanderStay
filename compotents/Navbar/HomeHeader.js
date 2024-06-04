@@ -107,8 +107,8 @@ const HomeHeader = ({
     slider.scrollLeft = slider.scrollLeft - 700;
   };
 
-  const openAirbnbHome = () => {
-    setissearch(false)
+  const openWanderStayHome = () => {
+    setissearch(false);
     setisopen(false);
     setshowrentModal(true);
   };
@@ -172,7 +172,7 @@ const HomeHeader = ({
           />
         </div>
         <div className="flex items-center justify-between w-full px-4 py-1 border rounded-full md:py-2 md:w-auto dark:border-gray-500">
-        <div
+          <div
             className="items-center md:hidden block justify-center bg-red-500 rounded-full p-1 px-1.5 cursor-pointer"
             onClick={() => {
               setshowfilterModal(true);
@@ -216,7 +216,7 @@ const HomeHeader = ({
             className="items-center md:hidden block justify-center bg-red-500 rounded-full p-1 px-1.5 cursor-pointer"
             onClick={openFilter}
           >
-           <MdOutlineSwapHoriz size={20} />
+            <MdOutlineSwapHoriz size={20} />
           </div>
         </div>
         <div className="flex items-center justify-center space-x-1">
@@ -240,10 +240,13 @@ const HomeHeader = ({
           </div>
         </div>
         {isopen && islogin && (
-          <motion.div initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          transition={{delay:0.1}} className=" border py-4 md:block shadow-lg z-50 absolute rounded-xl w-[280px] bg-white overflow-hidden lg:right-20 right-5  h-96 transition-transform top-[73px] text-sm dark:bg-gray-950 dark:border-gray-800">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ delay: 0.1 }}
+            className=" border py-4 md:block shadow-lg z-50 absolute rounded-xl w-[280px] bg-white overflow-hidden lg:right-20 right-5  h-96 transition-transform top-[73px] text-sm dark:bg-gray-950 dark:border-gray-800"
+          >
             <div className="mx-4 cursor-pointer">
               <h1 className="items-center text-base font-medium text-black dark:text-white">
                 2023 Summer Release
@@ -284,10 +287,10 @@ const HomeHeader = ({
               </div>
               <div className="mx-4 cursor-pointer">
                 <h1
-                  onClick={openAirbnbHome}
+                  onClick={openWanderStayHome}
                   className="items-center text-base font-medium text-black dark:text-white"
                 >
-                  Airbnb is your home
+                  WanderStay is your home
                 </h1>
               </div>
             </div>
@@ -349,7 +352,7 @@ const HomeHeader = ({
               <div className="mx-4 cursor-pointer">
                 <Link href={"/host/homes"}>
                   <h1 className="items-center text-base font-medium text-black dark:text-white">
-                    Airbnb your home
+                    WanderStay your home
                   </h1>
                 </Link>
               </div>

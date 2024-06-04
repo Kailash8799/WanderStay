@@ -122,7 +122,7 @@ const LoginModel = ({
                 </div>
                 <div className="items-center justify-center mx-auto mt-5">
                   <h1 className="text-xl font-semibold text-black dark:text-white">
-                    Welcome to Airbnb
+                    Welcome to WanderStay
                   </h1>
                 </div>
                 <div className="items-center justify-center px-6 py-2 space-y-4 text-center">

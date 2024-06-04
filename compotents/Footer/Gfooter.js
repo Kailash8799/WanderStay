@@ -17,7 +17,7 @@ const Gfooter = () => {
             <h1 className='font-sans text-sm font-medium text-black dark:text-white'>Wishlists</h1>
         </div>
         <div className='items-center justify-center text-center'>
-            <Image src={"/icon.png"} className='mx-auto' alt='icon' width={20} height={20}/>
+            <Image src={"/icon.png"} className='mx-auto' alt='icon' width={35} height={35}/>
             <h1 className='font-sans text-sm font-medium text-black dark:text-white'>Trips</h1>
         </div>
         <div className='items-center justify-center text-center'>

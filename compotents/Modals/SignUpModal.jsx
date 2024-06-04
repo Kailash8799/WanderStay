@@ -119,7 +119,7 @@ const SignUpModal = ({
                 </div>
                 <div className="items-center justify-center mx-auto mt-5">
                   <h1 className="text-xl font-semibold text-black dark:text-white">
-                    Welcome to Airbnb
+                    Welcome to WanderStay
                   </h1>
                 </div>
                 <div className="items-center justify-center px-6 py-2 space-y-4 text-center">
@@ -156,7 +156,11 @@ const SignUpModal = ({
                     onClick={handleSubmit}
                     className="w-5/6 px-10 py-2 rounded-lg bg-rose-600"
                   >
-                    {!loading ? "Continue" : <CircularProgress color="success" size={18}/>}
+                    {!loading ? (
+                      "Continue"
+                    ) : (
+                      <CircularProgress color="success" size={18} />
+                    )}
                   </button>
                 </div>
                 <div className="flex items-center justify-center space-x-4 text-center">

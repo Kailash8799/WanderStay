@@ -157,7 +157,7 @@ const FiltersModal = ({ showfilterModal, setshowfilterModal }) => {
                     <CloseOutlinedIcon />
                   </span>
                   <h1 className="text-black dark:text-white">
-                    Airbnb is your home
+                    WanderStay is your home
                   </h1>
                   <h1></h1>
                 </div>
