@@ -36,10 +36,11 @@ Before you begin, ensure you have met the following requirements:
 git clone https://github.com/Kailash8799/WanderStay.git
 ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory and install dependencies:
 
 ```sh
 cd WanderStay
+npm install
 ```
 
 3. Create a `.env.local` file in the root directory of client and add the environment variables as mentioned in the `.env.example` file in the root directory.
